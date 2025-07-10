@@ -16,10 +16,17 @@ Halo {nama}! Coba kamu perhatikan lubang dibawah ini!
 ''')
 jawaban = int(input("Menurut kamu, lubang mana yang ada tikusnya? [1 / 2 / 3 / 4 / 5]:"))
 
-if jawaban == posisi_tikus:
-    print(f"BENER! Tikus ada di lubang nomor {posisi_tikus} dan pilihan kamu adalah {jawaban}")
-else:
-    print(f"SALAH! Tikus ada di lubang nomor {posisi_tikus} sedangkan pilihan kamu adalah {jawaban}")
+konfirmasi = input(f"{nama} kamu menjawab gua no: {jawaban}, apa kamu yakin? [y/n]")
 
+if konfirmasi == "n":
+    exit()
+elif konfirmasi == "y":
+    if jawaban == posisi_tikus:
+        print(f"BENER! Tikus ada di lubang nomor {posisi_tikus} dan pilihan kamu adalah {jawaban}")
+    else:
+        print(f"SALAH! Tikus ada di lubang nomor {posisi_tikus} sedangkan pilihan kamu adalah {jawaban}")
+else:
+    print("Yang kamu ketik gak ada di pilihan!")
+    exit()
 
 
