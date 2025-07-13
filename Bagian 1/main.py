@@ -9,10 +9,14 @@ print("**********************************")
 
 nama = input("Masukin nama kamu: ")
 
+bentuk_lubang = "|_|"
+lubang = [bentuk_lubang] * 5
+
+lubang[posisi_tikus - 1] = "|0_0|"
+
 print(f'''
 Halo {nama}! Coba kamu perhatikan lubang dibawah ini!
-
-                |_| |_| |_| |_| |_|
+                {lubang}
 ''')
 jawaban = int(input("Menurut kamu, lubang mana yang ada tikusnya? [1 / 2 / 3 / 4 / 5]:"))
 
@@ -28,5 +32,3 @@ elif konfirmasi == "y":
 else:
     print("Yang kamu ketik gak ada di pilihan!")
     exit()
-
-
