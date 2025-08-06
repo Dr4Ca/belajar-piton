@@ -27,11 +27,9 @@ if konfirmasi == "n":
     exit()
 elif konfirmasi == "y":
     if jawaban == posisi_tikus:
-        print(f'''{lubang_berbentuk}''')
-        print(f"BENER! Tikus ada di lubang nomor {posisi_tikus} dan pilihan kamu adalah {jawaban}")
+        print(f'''{lubang_berbentuk} \n BENER! Tikus ada di lubang nomor {posisi_tikus} dan pilihan kamu adalah {jawaban}''')
     else:
-        print(f'''{lubang_berbentuk}''')
-        print(f"SALAH! Tikus ada di lubang nomor {posisi_tikus} sedangkan pilihan kamu adalah {jawaban}")
+        print(f'''{lubang_berbentuk} \n SALAH! Tikus ada di lubang nomor {posisi_tikus} sedangkan pilihan kamu adalah {jawaban}''')
 else:
     print("Yang kamu ketik gak ada di pilihan!")
     exit()
